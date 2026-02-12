@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --bg-color: hsl(204, 43%, 93%);
+    --card1-color: white;
+    --card2-color: hsl(179, 62%, 43%);
+    --card3-color: #49BEBD;
+    --button-color: hsl(71, 73%, 54%);
+    --paragraph-color: hsl(218, 22%, 67%);
+    --font-family: "Karla", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+
+.box {
+    width: 300px;
+    height: 240px;
+    padding: 10px 20px;
+}
+
+.box > p, h3 {
+    margin: 15px 0px;
+}
+
+#box1 {
+    background-color: var(--card1-color);
+    border-radius: 5px 5px 0px 0px;
+}
+
+#box1 > h1 {
+    color: var(--card2-color);
+    font-size: 23px;
+}
+
+#box1 > #p1 {
+    color: var(--button-color);
+    font-weight: 700;
+}
+
+#box1 > #p2 {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+#box2 {
+    background-color: var(--card2-color);
+    color: white;
+}
+
+#box2 div.plan {
+    display: flex;
+}
+
+#box2 div.value {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#box2 div.text {
+    font-size: 15px;
+    font-weight: 100;
+    align-self: center;
+    padding: 10px;
+}
+
+#box2 button {
+    font-family: var(--font-family);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--button-color);
+    border: none;
+    width: 260px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 27px 31px 20px -14px rgba(0,0,0,0.1);
+}
+
+#box3 {
+    background-color: var(--card3-color);
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#box3 p {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        height: 450px;
+        width: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1.3fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #box1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    #box2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    #box3 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 10px 0px;
+    }
+}

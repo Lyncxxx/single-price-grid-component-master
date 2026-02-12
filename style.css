@@ -34,7 +34,7 @@ body {
     padding: 10px 20px;
 }
 
-.box > p, h3 {
+.box > p, h1 {
     margin: 15px 0px;
 }
 
@@ -62,6 +62,11 @@ body {
 #box2 {
     background-color: var(--card2-color);
     color: white;
+}
+
+#box2 > h1, #box3 > h1 {
+    color: white;
+    font-size: 20px;
 }
 
 #box2 div.plan {
